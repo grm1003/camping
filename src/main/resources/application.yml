@@ -1,0 +1,8 @@
+spring:
+    profiles:
+        active: local
+    application:
+        name: camping
+
+server:
+    port: 3000
