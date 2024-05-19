@@ -1,20 +1,23 @@
 package com.chatdemo.camping.infrasctructure.kafka.producer;
 
 import lombok.RequiredArgsConstructor;
-import org.apache.coyote.BadRequestException;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
+
+import java.util.logging.Logger;
+
 
 @Service
 @RequiredArgsConstructor
 public class GenericProducer {
     private final KafkaTemplate<String, Object> kafkaTemplate;
+    Logger log = Logger.getLogger(String.valueOf(GenericProducer.class));
 
-    public void sendMessage(String topic,Object object, String key) throws BadRequestException {
+    public void sendMessage(String topic,Object object, String key) {
         try{
             kafkaTemplate.send(topic, key, object);
         } catch (Exception e){
-            throw new BadRequestException("Erro ao enviar mensagem");
+            log.info("Erro ao enviar mensagem para o Kafka");
         }
     }
 }

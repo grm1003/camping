@@ -1,7 +1,7 @@
 spring:
   kafka:
     topic:
-      name: MessageTopic
+      name: messages-local
     group_id:
         name: camping
     producer:
