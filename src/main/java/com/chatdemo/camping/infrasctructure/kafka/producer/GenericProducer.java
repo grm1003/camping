@@ -2,12 +2,13 @@ package com.chatdemo.camping.infrasctructure.kafka.producer;
 
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Service;
 
 import java.util.logging.Logger;
 
 
-@Service
+@Component
 @RequiredArgsConstructor
 public class GenericProducer {
     private final KafkaTemplate<String, Object> kafkaTemplate;
