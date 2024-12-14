@@ -12,8 +12,6 @@ public class MessageSenderImpl implements MessageSender {
     private final KafkaPort kafkaPort;
     @Override
     public void send(UserMessage mensagem) {
-
       kafkaPort.sendMessage(mensagem);
-
     }
 }
