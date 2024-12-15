@@ -1,4 +1,4 @@
-package com.chatdemo.camping.domains.entity;
+package com.chatdemo.camping.domains.models;
 
 
 import lombok.Builder;

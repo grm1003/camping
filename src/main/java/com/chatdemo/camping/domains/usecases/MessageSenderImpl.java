@@ -1,6 +1,6 @@
 package com.chatdemo.camping.domains.usecases;
 
-import com.chatdemo.camping.domains.entity.UserMessage;
+import com.chatdemo.camping.domains.models.UserMessage;
 import com.chatdemo.camping.domains.ports.KafkaPort;
 import com.chatdemo.camping.domains.resourses.MessageSender;
 import lombok.RequiredArgsConstructor;

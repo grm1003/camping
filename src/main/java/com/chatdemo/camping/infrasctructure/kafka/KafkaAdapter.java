@@ -1,6 +1,6 @@
 package com.chatdemo.camping.infrasctructure.kafka;
 
-import com.chatdemo.camping.domains.entity.UserMessage;
+import com.chatdemo.camping.domains.models.UserMessage;
 import  com.chatdemo.camping.domains.ports.KafkaPort;
 import com.chatdemo.camping.infrasctructure.kafka.producer.MessageProducer;
 import lombok.RequiredArgsConstructor;

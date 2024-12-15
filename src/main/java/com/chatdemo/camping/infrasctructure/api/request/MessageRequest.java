@@ -1,7 +1,7 @@
 package com.chatdemo.camping.infrasctructure.api.request;
 
-import com.chatdemo.camping.domains.entity.TypeMessageEnum;
-import com.chatdemo.camping.domains.entity.UserMessage;
+import com.chatdemo.camping.domains.models.TypeMessageEnum;
+import com.chatdemo.camping.domains.models.UserMessage;
 import lombok.Data;
 
 import java.util.List;
